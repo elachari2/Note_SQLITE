@@ -1,4 +1,3 @@
-// database.js
 import * as SQLite from 'expo-sqlite';
 
 const db = SQLite.openDatabaseSync('notes.db');
@@ -11,7 +10,7 @@ export const initDB = async () => {
 
 export const getNotes = async () => {
     const rows = await db.getAllAsync('SELECT * FROM notes;');
-    return rows; // tableau d'objets {id, text}
+    return rows; 
 };
 
 export const addNote = async (text) => {
