@@ -1,4 +1,4 @@
-// App.js
+
 import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Button, FlatList, StyleSheet } from 'react-native';
 import { initDB, getNotes, addNote, deleteNote } from './database';
